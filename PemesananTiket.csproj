@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C431E592-2488-488E-B9FA-B2D7F04CE61F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PemesananTiket</RootNamespace>
+    <AssemblyName>PemesananTiket</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataPemesanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPemesanan.Designer.cs">
+      <DependentUpon>DataPemesanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPetugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPetugas.Designer.cs">
+      <DependentUpon>LoginPetugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormPenumpang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormPenumpang.Designer.cs">
+      <DependentUpon>MainFormPenumpang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pemesanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pemesanan.Designer.cs">
+      <DependentUpon>Pemesanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penumpang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penumpang.Designer.cs">
+      <DependentUpon>Penumpang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Petugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Petugas.Designer.cs">
+      <DependentUpon>Petugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properti.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rute.Designer.cs">
+      <DependentUpon>Rute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TampilanDepan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TampilanDepan.Designer.cs">
+      <DependentUpon>TampilanDepan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipeTransportasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipeTransportasi.Designer.cs">
+      <DependentUpon>TipeTransportasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transportasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transportasi.Designer.cs">
+      <DependentUpon>Transportasi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataPemesanan.resx">
+      <DependentUpon>DataPemesanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPetugas.resx">
+      <DependentUpon>LoginPetugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormPenumpang.resx">
+      <DependentUpon>MainFormPenumpang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pemesanan.resx">
+      <DependentUpon>Pemesanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penumpang.resx">
+      <DependentUpon>Penumpang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Petugas.resx">
+      <DependentUpon>Petugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rute.resx">
+      <DependentUpon>Rute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TampilanDepan.resx">
+      <DependentUpon>TampilanDepan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipeTransportasi.resx">
+      <DependentUpon>TipeTransportasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Transportasi.resx">
+      <DependentUpon>Transportasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
